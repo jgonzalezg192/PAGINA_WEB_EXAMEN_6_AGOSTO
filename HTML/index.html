@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GEGADO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <style>
+    .navbar-nav .nav-link {
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    .navbar-brand img {
+      max-height: 70px; 
+    }
+
+    .imagen-principal {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+  .step-icon {
+      font-size: 48px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .step-title {
+      color: #007bff;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .step-number {
+      font-weight: bold;
+    }
+    .card-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+        }
+        .info-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+        .info-text {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            color: #34495e;
+            font-size: 1.1rem;
+        }
+        .how-it-works-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        .how-it-works-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .credit-card-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .credit-card-img:hover {
+            transform: translateY(-5px);
+        }
+        .card-details {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .detail-item {
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+        .detail-label {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+        .divider {
+            border-top: 1px solid #ecf0f1;
+            margin: 1.5rem 0;
+        }
+        footer {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border-top: 1px solid #e7e7e7;
+        }
+        
+        .footer-column {
+            margin: 0 15px;
+            min-width: 150px;
+        }
+        
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #000;
+        }
+        
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #e7e7e7;
+            color: #666;
+            font-size: 14px;
+        }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="../IMG/logo_gegado-removebg-preview.png" alt="Logo GEGADO">
+      </a>
+    </div>
+    <div class="container">
+      <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#soluciones">Soluciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectores">Sectores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <img src="../IMG/imagen_secundaria.png" alt="Diseñador en acción" class="imagen-principal">
+  <div class="container text-center py-5">
+    <p class="text-primary fw-semibold">Gestión de gastos y viajes corporativos</p>
+    <h2 class="fw-bold mb-3">Desde el viaje al gasto, control 100%</h2>
+    <p class="mx-auto" style="max-width: 800px;">
+      Independientemente de tu complejidad, Gegado Gestión tiene la solución de gestión de gastos para ayudarte a gestionar y tomar el control
+      de los procesos de su organización fácilmente. Optimiza tu gestión de viajes y gastos en informes de gastos, facturación y pagos. 
+      Da a los empleados tiempo para concentrarse en el negocio, no en el trabajo pesado.
+    </p>
+    <div class="row text-start mt-5">
+      <div class="col-md-3 text-center">
+        <div class="step-icon">✈️</div>
+        <div class="step-number">1. VIAJA</div>
+        <div class="fw-bold">Solicitud y aprobación</div>
+        <p>
+          Cumple con de la política de viajes a través y obtén un ahorro potencial del 20 % en tu programa de viajes corporativos.
+        </p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="step-icon">💳</div>
+        <div class="step-number">2. PAGA</div>
+        <div class="fw-bold">Gasto según políticas</div>
+        <p>
+          Emite tarjetas virtuales o físicas para tus empleados y realiza un control en tiempo real desde Gegado Gestión.
+        </p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="step-icon">📄</div>
+        <div class="step-number">3. REPORTA</div>
+        <div class="fw-bold">Concilia el gasto</div>
+        <p>
+          Los gastos se capturan con la cámara del móvil; nuestra tecnología convertirá la imagen en texto para digitalizar la información.
+        </p>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="step-icon">📊</div>
+        <div class="step-number">4. ANALIZA</div>
+        <div class="fw-bold">Toma decisiones con datos</div>
+        <p>
+          Obtén una visión global de los gastos de los empleados en relación a todos los aspectos de tu empresa. 
+          Conoce el consumo de tus proveedores y renegocia contratos.
+        </p>
+      </div>
+    </div>
+  </div>
+  <section class="card-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1 order-2">
+                <h1 class="info-title">Crea tarjetas virtuales inteligentes y concilia automáticamente los gastos</h1>
+                <p class="info-text">
+                    Emite tarjetas físicas o virtuales para los empleados y obtén el control en tiempo real desde Gegado Gestión. 
+                    Regulación Europea. Sin comisiones. De esta manera, los trabajadores no tendrán que abonar gastos 
+                    de su bolsillo y posteriormente esperar a ser reembolsados. Realiza un control en tiempo real en 
+                    cualquier punto del proceso del gasto. Emburse Cards te da visibilidad desde el momento de venta 
+                    hasta la conciliación.
+                </p>
+                <button class="how-it-works-btn">Cómo funciona</button>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                <img src="../IMG/tarjeta_credito.png" 
+                     alt="Tarjeta de crédito virtual" 
+                     class="credit-card-img">
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+  <div class="footer-column">
+      <h3>SOLUCIONES</h3>
+      <ul>
+          <li><a href="#">Gastos del empleado</a></li>
+          <li><a href="#">Tarjetas bancarias</a></li>
+          <li><a href="#">Administración de los gastos</a></li>
+          <li><a href="#">Gastos de viajes de empresa</a></li>
+      </ul>
+  </div>
+  <div class="footer-column">
+      <h3>SERVICIOS</h3>
+      <ul>
+          <li><a href="#">Todos los servicios</a></li>
+          <li><a href="#">Centro de Ayuda</a></li>
+      </ul>
+  </div>
+  <div class="footer-column">
+      <h3>CUSTOMER SUCCESS</h3>
+      <ul>
+          <li><a href="#">Puesta en marcha y formación</a></li>
+      </ul>
+  </div>
+  <div class="footer-column">
+      <h3>SOBRE GEGADO</h3>
+      <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Eventos y webinars</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Únete al equipo</a></li>
+          <li><a href="#">Contacto con Gegado</a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      © 2025 Todos los derechos reservados
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS (opcional si no hay funcionalidad JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
